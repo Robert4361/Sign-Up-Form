@@ -52,7 +52,6 @@ body {
 .content {
   background-color: var(--main-background);
   width: 100%;
-  padding-left: 3em;
 }
 
 p {
@@ -60,13 +59,33 @@ p {
 }
 
 header p:first-child {
-  padding: 5em 30em 1em 0em;
+  padding: 5em 30em 1em 3em;
 }
 
 header p:last-child {
-  padding: 0 5em 3em 0em;
+  padding: 0 5em 3em 3em;
 }
 
+.form{
+  background-color: white;
+  padding: 2em;
+  box-shadow: 10px 1px 5px gray;
+}
 form {
   margin-top: 1.5em;
+  width: 40em;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 2em;
+
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3em;
+}
+
+.content button {
+  margin-left: 2em;
 }
