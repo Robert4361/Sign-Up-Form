@@ -61,8 +61,13 @@ p {
   font-size: 1.5em;
 }
 
+header {
+  flex-shrink: 0;
+}
+
 header p:first-child {
-  padding: 5em 30em 1em 3em;
+  padding: 5em 2em 1em 3em;
+  max-width: 30em;
 }
 
 header p:last-child {
@@ -76,7 +81,7 @@ header p:last-child {
 }
 form {
   margin-top: 1.5em;
-  width: 40em;
+  max-width: 40em;
   flex-wrap: wrap;
   display: flex;
   gap: 2em;
