@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Norse Bold';
+  font-family: "Norse Bold";
   src: url("assets/Norse-Bold.otf") format("opentype");
 }
 
 :root {
-  --main-background: #E5E7EB;
+  --main-background: #e5e7eb;
 }
 
 *,
@@ -37,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, .50);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 50vh;
   position: relative;
   top: 15em;
@@ -45,11 +45,28 @@ body {
 
 .sidebar-image p {
   color: white;
-  font-family: 'Norse Bold';
+  font-family: "Norse Bold";
   font-size: 5em;
 }
 
 .content {
   background-color: var(--main-background);
   width: 100%;
+  padding-left: 3em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+header p:first-child {
+  padding: 5em 30em 1em 0em;
+}
+
+header p:last-child {
+  padding: 0 5em 3em 0em;
+}
+
+form {
+  margin-top: 1.5em;
 }
