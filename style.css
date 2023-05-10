@@ -3,6 +3,10 @@
   src: url("assets/Norse-Bold.otf") format("opentype");
 }
 
+:root {
+  --main-background: #E5E7EB;
+}
+
 *,
 *::before,
 *::after {
@@ -23,8 +27,29 @@ body {
 
 .logo {
   background-image: url("assets/background_picture.avif");
+  background-size: cover;
   width: max-content;
   height: 100vh;
-  width: 50vh;
   background-repeat: no-repeat;
+}
+
+.sidebar-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .50);
+  width: 50vh;
+  position: relative;
+  top: 15em;
+}
+
+.sidebar-image p {
+  color: white;
+  font-family: 'Norse Bold';
+  font-size: 5em;
+}
+
+.content {
+  background-color: var(--main-background);
+  width: 100%;
 }
