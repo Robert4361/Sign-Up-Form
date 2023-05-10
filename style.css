@@ -5,6 +5,8 @@
 
 :root {
   --main-background: #e5e7eb;
+  --button-color : #596D48;
+  --input-focus-border: #2596be;
 }
 
 *,
@@ -31,6 +33,7 @@ body {
   width: max-content;
   height: 100vh;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .sidebar-image {
@@ -88,4 +91,21 @@ form {
 
 .content button {
   margin-left: 2em;
+  background-color: #596D48;
+  color: white;
+  padding: 1em 3em;
+  border-radius: 0.5em;
+  margin-top: 2em;
+  font-weight: 700;
+}
+
+form input {
+  border-color: var(--main-background);
+  padding: 0.2em;
+  border-radius: 3px;
+  outline: none;
+}
+
+form input:focus {
+  border-color: var(--input-focus-border);
 }
