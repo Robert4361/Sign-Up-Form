@@ -25,6 +25,7 @@ body {
   box-sizing: border-box;
   font-size: 1.6rem;
   display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo {
@@ -63,6 +64,7 @@ p {
 
 header {
   flex-shrink: 0;
+  font-weight: 600;
 }
 
 header p:first-child {
@@ -76,9 +78,14 @@ header p:last-child {
 
 .form{
   background-color: white;
-  padding: 2em;
+  padding: 3em;
   box-shadow: 10px 1px 5px gray;
 }
+
+.form p {
+  font-weight: 500;
+}
+
 form {
   margin-top: 1.5em;
   max-width: 40em;
@@ -94,8 +101,14 @@ form {
   margin-right: 3em;
 }
 
+form label {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #33322f;
+}
+
 .content button {
-  margin-left: 2em;
+  margin-left: 3.5em;
   background-color: #596D48;
   color: white;
   padding: 1em 3em;
@@ -113,4 +126,15 @@ form input {
 
 form input:focus {
   border-color: var(--input-focus-border);
+}
+
+.login-check {
+  font-size: 1em;
+  margin-top: 2.5em;
+  margin-left: 3em;
+}
+
+.login{
+  color: var(--button-color);
+  font-weight: 600;
 }
